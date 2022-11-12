@@ -1,4 +1,5 @@
 import khodro.Car;
+import khodro.Khodro;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -7,8 +8,8 @@ public class CarTest {
     @Test
     void CarMustMoveWhenDoorsAreClosed() {
 
-        Car benz = new Car("benz");
-        Car volvo = new Car("volvo");
+        Khodro benz = new Car("benz");
+        Khodro volvo = new Car("volvo");
 
 
         boolean isCarMoving = benz.IsMoving();

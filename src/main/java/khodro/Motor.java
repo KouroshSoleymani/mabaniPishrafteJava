@@ -1,16 +1,7 @@
 package khodro;
 
-public class Motor {
-    boolean isOn;
+public class Motor extends Khodro{
 
-    public void roshan(){
-
-        isOn = true;
-    }
-    public void khamoosh(){
-
-        isOn = false;
-    }
 
     public boolean IsMoving() {
         if (isOn) {
@@ -20,5 +11,10 @@ public class Motor {
 
             return false;
         }
+    }
+
+    @Override
+    public String getBrand() {
+        return "Motor";
     }
 }

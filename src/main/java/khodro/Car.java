@@ -1,6 +1,6 @@
 package khodro;
 
-public class Car {
+public class Car extends Khodro implements Gearbox,SandoghDar {
 
 
         public Car(){
@@ -11,21 +11,21 @@ public class Car {
 
         }
 
-        boolean isOn;
+        String modelDande;
+        int gonjayeshSandogh;
         boolean isDoorOpen;
         double tool;
         double arz;
         String brand;
 
-        public void roshan(){
+    public Car(String brand, int gonjayeshSandogh, String modelDande) {
+        this.brand = brand;
+        this.gonjayeshSandogh = gonjayeshSandogh;
+        this.modelDande =modelDande;
+    }
 
-            isOn = true;
-        }
-        public void khamoosh(){
 
-            isOn = false;
-        }
-        public void darBazAst(){
+    public void darBazAst(){
 
             isDoorOpen = true;
         }
@@ -43,4 +43,19 @@ public class Car {
                 return false;
             }
         }
+
+    @Override
+    public String getBrand() {
+        return brand;
+    }
+
+    @Override
+    public String typeDande() {
+        return "automatic";
+    }
+
+    @Override
+    public int gonjayesh() {
+        return 100;
+    }
 }
