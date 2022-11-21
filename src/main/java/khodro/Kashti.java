@@ -1,4 +1,5 @@
-import khodro.Khodro;
+package khodro;
+
 
 public class Kashti extends Khodro {
     @Override

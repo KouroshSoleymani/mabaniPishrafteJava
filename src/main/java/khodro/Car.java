@@ -3,7 +3,9 @@ package khodro;
 public class Car extends Khodro implements Gearbox,SandoghDar {
 
 
-        public Car(){
+    public static int tedadFroosh;
+
+    public Car(){
 
         }
         public Car(String brand){
